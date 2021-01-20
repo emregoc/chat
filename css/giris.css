@@ -1,0 +1,175 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+
+
+html {
+	font-size: 10px;
+}
+
+.sol{
+    position: absolute;
+    top: 50%;
+    margin-top: -210px;
+    margin-left: 210px;
+}
+
+
+.sag{
+    position: absolute;
+    top: 50%;
+    margin-top: -210px;
+	margin-left: 1000px;
+	text-align: center;
+}
+
+.orta-kayit{
+    width: 350px;
+    height: 360px;
+    background-color: rgb(255, 254, 254);
+    border-radius: 15%;
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    margin-left: -30px;
+    margin-top: -100px;
+    border: 2px solid black;
+    text-align: center;
+    box-shadow: 10px 10px 20px 2px;
+}
+
+.orta{ /*ortadaki divi ortalamak için gerekli css kodlarını yazdık*/
+
+	width: 350px;
+	height: 200px;
+    background-color: rgb(255, 254, 254);
+    border-radius: 15%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -30px;
+    margin-top: -100px;
+    border:2px solid black;
+    text-align: center;
+    box-shadow: 10px 10px 20px 2px; 
+    
+}
+
+#birinci{ 
+
+    padding: 3px;
+
+}
+
+#ikinci{
+
+    padding: 3px;
+
+}
+
+
+#input1 {
+    width: 85%; /*bulunduğun divin yüzde 85 ini kapsıyor*/
+    padding: 3px;
+}
+
+#input2{
+    width: 85%;
+
+}
+
+.btn{
+    padding-right: 15px; 
+    margin-top: 8px; /*üstten 8 px bosluk bıraktık*/ 
+    text-align: center;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	font-size: 1.6rem;
+	font-weight: 400;
+	line-height: 1.5;
+    background-image: url(../css/resim/arkaplan.jpg);/*resmi css dosyasının içine koyup çekmemiz lazım*/
+	object-fit : cover;
+}
+
+a {
+	text-decoration: none; /*linkin altındaki çizgiyi kaldırdık*/
+}
+
+ul {
+	list-style-type: none;  /*listenin başındaki işaretleri kaldırıyoruz*/
+}
+
+.clearfix::after {  /*tasarım bozuldugu için etiketlerin sonuna boş eleman ekliyoruz ve tasarımı tekrar düzeltiyoruz*/
+	content: "";
+	display: block;
+	clear: both;
+}
+
+#home{ /*home iconu için css*/
+	color:rgb(255, 255, 255);
+    font-size:3.2rem;
+    transition: color .3s; /*home iconu için mouse üstüne geldiğinde hover işlemi için saniye verdik*/
+}
+	
+
+.ust {
+    width: 1140px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+
+
+.text-uppercase {
+	text-transform: uppercase; /*yazıları büyük yazar*/
+}
+
+#logo-box {
+	float: left; /*sola hizaladık*/
+	padding-top: 2.5rem;
+}
+
+#logo-box .logo {  /*logo-box id altındaki logo class adına ulasarak css uyguluyoruz yani a içerisindeki home yazısı*/
+	color:rgb(255, 255, 255);
+    font-weight: 700;
+    font-family: cursive;
+    font-size: 3.2rem;
+    
+}
+
+
+#nav-links { /*nav-links id li divi sağa hizaladık*/
+	float: right;
+}
+
+#nav-links .nav-item { /*nav-links id si altındaki nav item classlarına ulaştık*/
+	float: left; /*sola hizaladık*/
+	margin: .4rem; /*4 piksel boşluk bıraktık*/
+}
+
+#nav-links .nav-link {
+	color: #fff;
+	font-size: 2.2rem;
+	font-weight: 700;
+	display: block; /*üst ve alttanda boşluk değerleri aktif olsun diye yazdık inline-blockta yazabilirdik*/
+	padding: 3.2rem;
+	letter-spacing: .1rem;
+	transition: color .3s;
+}
+
+
+#logo-box #home:hover { /*logo-box altında home idsine üstüne mouse geldikten sonra değişim rengini verdik*/
+	color: #75e2e2;
+}
+
+#nav-links .nav-link:hover { /*nav-links id si altında nav-link classı üstüne mouse geldikten sonra değişim rengini verdik*/
+	color: #75e2e2;
+}
+

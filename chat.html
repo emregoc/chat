@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnlineChat - Chat Odası</title>
+
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+    <link href="fontawesome-free-5.14.0-web/css/all.css" rel="stylesheet"> <!-- indirdiğimiz icon dosyasındaki kütüphaneyi burda çağırıyoruz -->
+
+    <!-- <link rel="stylesheet" href="css/giris.css"> -->
+
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body { font: 13px Helvetica, Arial; }
+      form { background: #000; padding: 3px; position: fixed; bottom: 26px;  width: 55%; margin-left: 25px;}
+      form input { border: 0; padding: 10px; width: 90%; margin-right: .5%; }
+      form button { width: 9%; background: rgb(130, 224, 255); border: none; padding: 10px; }
+      #messages { list-style-type: none; margin: 0; padding: 0;   }
+      #messages li { padding: 5px 10px; }
+      #messages li:nth-child(odd) { background: #eee; }
+      #messages { margin-bottom: 40px; margin-top: 47px; }
+
+      * {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+
+
+html {
+	font-size: 10px;
+}
+
+.sol{
+    position: absolute;
+    top: 50%;
+    margin-top: -210px;
+    margin-left: 210px;
+}
+
+
+.sag{
+    position: absolute;
+    top: 50%;
+    margin-top: -210px;
+	margin-left: 1000px;
+	text-align: center;
+}
+
+.orta-kayit{
+    width: 800px;
+    height: 500px;
+    background-color: rgb(255, 254, 254);
+    border-radius: 15%;
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    margin-left: -400px;
+    margin-top: -200px;
+    border: 2px solid black;
+    text-align: center;
+    box-shadow: 10px 10px 20px 2px;
+}
+
+.orta{ /*ortadaki divi ortalamak için gerekli css kodlarını yazdık*/
+
+	width: 350px;
+	height: 200px;
+    background-color: rgb(255, 254, 254);
+    border-radius: 15%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -30px;
+    margin-top: -100px;
+    border:2px solid black;
+    text-align: center;
+    box-shadow: 10px 10px 20px 2px; 
+    
+}
+
+#birinci{ 
+
+    padding: 3px;
+
+}
+
+#ikinci{
+
+    padding: 3px;
+
+}
+
+
+#input1 {
+    width: 85%; /*bulunduğun divin yüzde 85 ini kapsıyor*/
+    padding: 3px;
+}
+
+#input2{
+    width: 85%;
+
+}
+
+.btn{
+    padding-right: 15px; 
+    margin-top: 8px; /*üstten 8 px bosluk bıraktık*/ 
+    text-align: center;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	font-size: 1.6rem;
+	font-weight: 400;
+	line-height: 1.5;
+   /* background-image: url(../css/resim/arkaplan.jpg);/*resmi css dosyasının içine koyup çekmemiz lazım*/
+	object-fit : cover;
+}
+
+a {
+	text-decoration: none; /*linkin altındaki çizgiyi kaldırdık*/
+}
+
+ul {
+	list-style-type: none;  /*listenin başındaki işaretleri kaldırıyoruz*/
+}
+
+.clearfix::after {  /*tasarım bozuldugu için etiketlerin sonuna boş eleman ekliyoruz ve tasarımı tekrar düzeltiyoruz*/
+	content: "";
+	display: block;
+	clear: both;
+}
+
+#home{ /*home iconu için css*/
+	color:rgb(255, 255, 255);
+    font-size:3.2rem;
+    transition: color .3s; /*home iconu için mouse üstüne geldiğinde hover işlemi için saniye verdik*/
+}
+	
+
+.ust {
+    width: 1140px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+
+
+.text-uppercase {
+	text-transform: uppercase; /*yazıları büyük yazar*/
+}
+
+#logo-box {
+	float: left; /*sola hizaladık*/
+	padding-top: 2.5rem;
+}
+
+#logo-box .logo {  /*logo-box id altındaki logo class adına ulasarak css uyguluyoruz yani a içerisindeki home yazısı*/
+	color:rgb(255, 255, 255);
+    font-weight: 700;
+    font-family: cursive;
+    font-size: 3.2rem;
+    
+}
+
+
+#nav-links { /*nav-links id li divi sağa hizaladık*/
+	float: right;
+}
+
+#nav-links .nav-item { /*nav-links id si altındaki nav item classlarına ulaştık*/
+	float: left; /*sola hizaladık*/
+	margin: .4rem; /*4 piksel boşluk bıraktık*/
+}
+
+#nav-links .nav-link {
+	color: rgb(255, 255, 255);
+	font-size: 2.2rem;
+	font-weight: 700;
+	display: block; /*üst ve alttanda boşluk değerleri aktif olsun diye yazdık inline-blockta yazabilirdik*/
+	padding: 3.2rem;
+	letter-spacing: .1rem;
+	transition: color .3s;
+}
+
+
+#logo-box #home:hover { /*logo-box altında home idsine üstüne mouse geldikten sonra değişim rengini verdik*/
+	color: #75e2e2;
+}
+
+#nav-links .nav-link:hover { /*nav-links id si altında nav-link classı üstüne mouse geldikten sonra değişim rengini verdik*/
+	color: #75e2e2;
+}
+
+
+
+    </style>
+
+</head>
+
+
+<body>
+    <!-- shift+alt+f tuşu kodu düzenliyor -->
+    <!-- css kodları tarayıcıda kaldığı için ctrl+f5 ile yenile tarayıcıyı -->
+    <nav>
+        <!-- mantıksal etiket kullandık html5  -->
+        <div class="ust">
+            <div id="logo-box">
+
+               
+            </div>
+
+            <div id="nav-links">
+                
+            </div>
+
+        </div>
+
+
+    </nav>
+
+  
+
+
+    <div class="sag"> 
+
+    </div>
+
+    
+        <div class="orta-kayit">
+            
+        <ul id="messages"></ul>
+            <form action="">
+            <input id="m" autocomplete="off" /><button>Send</button>
+            </form>
+             <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+            <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+            <script>
+         $(function () {
+		  var endpoint = 'https://chat-uygulamasi.herokuapp.com/'; // server bilgilerine ait olan link
+          var socket = io();
+      // var socket = io();
+        $('form').submit(function(){
+          socket.emit('chat message', $('#m').val());
+          $('#m').val('');
+          return false;
+        });
+        socket.on('chat message', function(msg){
+          $('#messages').append($('<li>').text(msg));
+          window.scrollTo(0, document.body.scrollHeight);
+        });
+      });
+    </script>
+    
+        </div>
+        
+    
+</body>
+
+</html>
